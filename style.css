@@ -1,0 +1,62 @@
+.first-container {
+  background-color: #2c3930;
+  position: relative;
+  padding-top: 70px;
+  height: 500px;
+}
+
+.first-span {
+  color: #ff9d23;
+}
+
+.me {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: #a27b5c 5px solid;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+body {
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.para {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.second-container {
+  background-color: #3f4f44;
+  position: relative;
+  padding-top: 60px;
+  height: 400px;
+}
+.mario {
+  height: 200px;
+}
+
+.third-container {
+  background-color: #a27b5c;
+  position: relative;
+  padding-top: 70px;
+  height: 500px;
+}
+
+.education {
+  height: 200px;
+}
+
+.fourth-container {
+  background-color: #dcd7c9;
+  position: relative;
+  padding-top: 70px;
+  height: 150px;
+}
