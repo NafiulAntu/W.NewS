@@ -3,27 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>W.NewS 3D Portal</title>
   </head>
   <body>
-    <div class="first-container">
-      <img class="me" src="./container/compressed_IMG_0222.jpg" alt="me" />
-      <h1>𝑵𝑨𝑭𝑰𝑼𝑳-𝑰𝑺𝑳𝑨𝑴</h1>
-      <p><h3  class="para">
-        I am passionate <span class="first-span">Full-Stack</span> Developer. 
-      </h3>
-      </p>
-    </div>
-    <div class="second-container">
-      <h1>SKILLS</h1>
-      <h2>Desing and Development</h2>
-      <img class="mario" src="./element/mario.gif" alt="mario"/>
-    </div>
-    <div class="third-container">
-      <h1>Education</h1>
-      <img class="education" src="./element/education.gif" alt="edu"/>
-    </div>
-    <div class="fourth-container"></div>
+    <!-- Fullscreen Video Background -->
+    <video autoplay muted loop playsinline class="video-background">
+      <source src="./New folder (2)/5157-183300197.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Top Tab Bar -->
+    <nav class="tab-bar">
+      <div class="tab-logo">𝒲.𝒩𝑒𝓌𝒮</div>
+      <div class="tabs">
+        <a href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Categories</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Welcome</h1>
+      <h3>to W.NewS — for</h3>
+      <h2>
+        <span class="highlight">Trust, Truth</span> and
+        <span class="highlight">Knowledge</span>!
+      </h2>
+      <p>Stay informed. Stay empowered.</p>
+    </header>
+
+    <!-- First Media Slider -->
+    <section class="slider-wrapper">
+      <h2 class="section-title">Latest Media</h2>
+      <div class="slider draggable-slider">
+        <div class="media-card">
+          <img src="./New folder (2)/The.jpg" alt="img" />
+          <div class="caption">𝔗𝔥𝔢 𝔡𝔞𝔦𝔩𝔶 𝔰𝔱𝔞𝔯</div>
+        </div>
+        <div class="media-card">
+          <video autoplay muted loop playsinline>
+            <source src="./New folder (2)/arggg.mp4" type="video/mp4" />
+          </video>
+          <div class="caption">Agriculture</div>
+        </div>
+        <div class="media-card">
+          <img src="./New folder (2)/Alo.jpg" alt="img" />
+          <div class="caption">Exclusive</div>
+        </div>
+        <div class="media-card">
+          <video autoplay muted loop playsinline>
+            <source src="./New folder (2)/the.mp4" type="video/mp4" />
+          </video>
+          <div class="caption">Highlights</div>
+        </div>
+        <div class="media-card">
+          <img src="./New folder (2)/putin.jpg" alt="img" />
+          <div class="caption">Breaking</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two Side-by-Side Videos -->
+    <section class="two-video-wrapper">
+      <div class="video-card">
+        <video autoplay muted loop playsinline>
+          <source src="./New folder (2)/v1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay muted loop playsinline>
+          <source src="./New folder (2)/v3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- Second Media Slider -->
+    <section class="slider-wrapper">
+      <h2 class="section-title">More Stories</h2>
+      <div class="slider draggable-slider">
+        <div class="media-card">
+          <img src="./New folder (2)/what-is-data-analysis.jpg" />
+          <div class="caption">Analysis</div>
+        </div>
+        <div class="media-card">
+          <video autoplay muted loop playsinline>
+            <source src="./New folder (2)/Sports/stadi.mp4" type="video/mp4" />
+          </video>
+          <div class="caption">Sports</div>
+        </div>
+        <div class="media-card">
+          <img src="./New folder (2)/focus.jpg" />
+          <div class="caption">In Focus</div>
+        </div>
+        <div class="media-card">
+          <video autoplay muted loop playsinline>
+            <source src="./New folder (2)/Eco/wC.mp4" type="video/mp4" />
+          </video>
+          <div class="caption">Economi</div>
+        </div>
+        <div class="media-card">
+          <img
+            src="./New folder (2)/338258244-d915c1f7-994c-41e2-a27a-c2012f64fb2a.gif"
+          />
+          <div class="caption">N.I.A</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 W.NewS. All rights reserved.</p>
+
+      <div class="social-icons">
+        <a href="#"
+          ><img
+            src="./New folder (2)/icons/291720_social media_media_facebook_logo_internet_icon.png"
+        /></a>
+        <a href="#"
+          ><img
+            src="./New folder (2)/icons/291709_logo_linked in_social network_social_social media_icon.png"
+        /></a>
+        <a href="#"
+          ><img
+            src="./New folder (2)/icons/1156638_github_media_social_icon.png"
+        /></a>
+        <a href="#"
+          ><img
+            src="./New folder (2)/icons/3377042_gmail_logo_media_social_icon.png"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- JS Drag-to-Scroll -->
+    <script>
+      const sliders = document.querySelectorAll(".draggable-slider");
+      sliders.forEach((slider) => {
+        let isDown = false;
+        let startX, scrollLeft;
+        slider.addEventListener("mousedown", (e) => {
+          isDown = true;
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener("mouseleave", () => (isDown = false));
+        slider.addEventListener("mouseup", () => (isDown = false));
+        slider.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 2;
+          slider.scrollLeft = scrollLeft - walk;
+        });
+      });
+    </script>
   </body>
 </html>
