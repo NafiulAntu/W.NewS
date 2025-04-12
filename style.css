@@ -47,7 +47,7 @@ body {
 }
 .tabs a {
   color: rgb(246, 243, 243);
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s ease;
