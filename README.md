@@ -1,1 +1,1 @@
-[Here](https://nafiulantu.github.io/W.NewS/)
+[CLick](https://nafiulantu.github.io/W.NewS/)
