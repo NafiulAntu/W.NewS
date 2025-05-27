@@ -41,17 +41,26 @@ body {
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
+
 .tab-logo {
   font-size: 2.5rem;
   font-weight: bold;
+  color: white;
+  margin-right: 40px; /* Add spacing on the right of the logo */
 }
+
+.tab-items {
+  display: flex;
+  gap: 20px; /* Adds space between links */
+}
+
 .tabs a {
   color: rgb(246, 243, 243);
-  margin-left: 10px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s ease;
 }
+
 .tabs a:hover {
   transform: scale(1.1);
 }
@@ -124,7 +133,7 @@ body {
 }
 .video-card video {
   width: 100%;
-  height: 700px;
+  height: 1200px;
   object-fit: cover;
   display: block;
 }
@@ -170,6 +179,7 @@ body {
     font-size: 0.9rem;
   }
 }
+
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -217,4 +227,3 @@ body {
 .gmail {
   background-color: #d14836;
 }
-
