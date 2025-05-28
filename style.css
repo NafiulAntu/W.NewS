@@ -57,7 +57,7 @@ body {
 .tabs a {
   color: rgb(246, 243, 243);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 1200;
   transition: transform 0.2s ease;
 }
 
